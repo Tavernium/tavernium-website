@@ -11,13 +11,27 @@
   <meta property="og:description" content="Bar-restaurant festif & plateforme pour créateurs. Bientôt disponible.">
   <meta property="og:url" content="https://tavernium.com/">
   <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Klyne:wght@700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'Klyne';
+      src: url('./styles/fonts/KLYNERegular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
     :root { --bg:#0b0b0f; --fg:#eaeaf2; --muted:#9aa0a6; --accent:#7c3aed; }
     *{box-sizing:border-box} html,body{height:100%}
     body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif; background:radial-gradient(80% 50% at 50% 0%, #171724 0%, var(--bg) 60%); color:var(--fg);}
     .wrap{min-height:100%; display:flex; align-items:center; justify-content:center; padding:48px 24px;}
     .card{max-width:860px; width:100%; text-align:center; padding:48px 32px; border-radius:24px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); backdrop-filter:saturate(140%) blur(6px);}
-    h1{font-size: clamp(28px, 6vw, 56px); line-height:1.1; margin:0 0 16px;}
+    h1{
+      font-size: clamp(28px, 6vw, 56px);
+      line-height:1.1;
+      margin:0 0 16px;
+      font-family: 'Klyne', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
     p{color:var(--muted); font-size:clamp(16px, 2.6vw, 18px); margin:0 auto 28px; max-width:60ch}
     .cta{display:inline-block; padding:14px 20px; border-radius:12px; background:var(--accent); color:white; text-decoration:none; font-weight:600; transition:transform .06s ease, box-shadow .2s ease;}
     .cta:hover{transform:translateY(-1px); box-shadow:0 10px 30px rgba(124,58,237,.35)}
@@ -41,13 +55,13 @@
   <div class="wrap">
     <main class="card" role="main">
       <div class="pill">Bientôt</div>
-      <h1><span class="logo">Tavernium</span> — créativité & technologie qui s’unissent</h1>
-      <p>Un concept double&nbsp;: un bar‑restaurant festif autour de la tourte, et une plateforme cloud pour les créateurs. On peaufine l’expérience. Lancement prochain.</p>
+      <h1><span class="logo">Tavernium</span></h1>
+      <p>Un nouveau concept de bar-club-restaurant sur Auxerre : On peaufine l’expérience. Le lancement approche.</p>
       <a class="cta" href="mailto:tavernium@gmail.com?subject=Liste d’attente — Tavernium&body=Bonjour,%0AJe souhaite être tenu(e) informé(e) du lancement.%0A—%20">Rejoindre la liste d’attente</a>
       <div class="grid">
-        <span class="pill">Ouverture 2026</span>
+        <span class="pill">Ouverture prévue en 2026</span>
         <span class="pill">Auxerre · France</span>
-        <span class="pill">Plateforme créative</span>
+        <span class="pill">bar-club-restaurant</span>
       </div>
       <footer>© <span id="y"></span> Tavernium — Tous droits réservés.</footer>
     </main>
