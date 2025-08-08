@@ -37,6 +37,7 @@ h1{
   margin:0 0 16px;
   font-family: 'Klyne', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 p{
   color:var(--muted);
@@ -80,4 +81,7 @@ footer{
 }
 .logo{
   font-weight:800;
-  letter-
+  letter-spacing:-1px;
+  font-size:clamp(24px, 5vw, 48px);
+  margin-bottom:12px
+}
