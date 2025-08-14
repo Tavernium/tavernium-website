@@ -8,7 +8,7 @@
 }
 
 .hero-header {
-  min-height: 100vh; /* occupe toute la hauteur de la fenêtre */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,7 @@
 .logo-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -33,6 +34,18 @@
   border-radius: 16px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.slogan {
+  font-family: "Rubik", system-ui, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 12px 32px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;
 }
 
 .site-footer {
