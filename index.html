@@ -61,8 +61,211 @@
     </script>
   </head>
   <body>
-    <!-- 🔔 Ton contenu HTML inchangé ici (hero, sections, footer...) -->
-    <!-- Je n’ai pas recopié tout le corps pour ne pas te saturer, tu colles tout ton contenu ici -->
+    <header class="hero">
+      <div class="container">
+        <span class="badge">Ouverture prochaine</span>
+        <h1>Tavernium – Bar-restaurant festif 24h/24 à Auxerre</h1>
+        <p class="lead">
+          Découvrez nos cocktails signature et nos tourtes salées & sucrées,
+          servis 24h/24 dans une ambiance conviviale et festive.
+        </p>
+        <div class="buttons">
+          <a href="#inscription" class="btn btn-primary"
+            >S'inscrire à la liste d'attente</a
+          >
+          <a href="#carte" class="btn btn-secondary">Découvrir la carte</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="concept" class="concept">
+      <div class="container grid">
+        <div class="text">
+          <h2>Un concept unique à Auxerre</h2>
+          <p>
+            Tavernium est un bar-restaurant ouvert 24h/24, proposant une carte
+            originale de tourtes salées et sucrées, ainsi que des cocktails
+            exclusifs. Notre objectif est de créer un lieu chaleureux où se
+            mêlent bonne cuisine et ambiance festive.
+          </p>
+          <p>
+            Que ce soit pour un déjeuner, un afterwork ou une soirée, Tavernium
+            vous accueille à toute heure avec des saveurs authentiques et une
+            équipe passionnée.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            src="images/concept.jpg"
+            alt="Intérieur convivial de Tavernium"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="carte" class="carte">
+      <div class="container">
+        <h2>Notre carte</h2>
+        <div class="menu-grid">
+          <div class="menu-column">
+            <h3>Cocktails signature</h3>
+            <ul>
+              <li>
+                <strong>Le Chablis Fizz</strong> – Gin local, citron, tonic
+                artisanal
+              </li>
+              <li><strong>Tournesol</strong> – Vodka infusée, miel, agrumes</li>
+              <li>
+                <strong>Auxerrois Spritz</strong> – Vin blanc, apéritif maison,
+                soda
+              </li>
+            </ul>
+          </div>
+          <div class="menu-column">
+            <h3>Tourtes salées</h3>
+            <ul>
+              <li>
+                <strong>Classique Bourguignonne</strong> – Boeuf, vin rouge,
+                légumes
+              </li>
+              <li><strong>Végétarienne</strong> – Épinards, ricotta, noix</li>
+              <li>
+                <strong>Fromagère</strong> – Comté, chèvre, oignons caramélisés
+              </li>
+            </ul>
+          </div>
+          <div class="menu-column">
+            <h3>Tourtes sucrées</h3>
+            <ul>
+              <li>
+                <strong>Pommes et Calvados</strong> – Pommes caramélisées,
+                calvados
+              </li>
+              <li>
+                <strong>Chocolat noir et noisettes</strong> – Ganache et éclats
+              </li>
+              <li>
+                <strong>Fruits rouges</strong> – Fraises, framboises, myrtilles
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="app" class="app-section">
+      <div class="container grid">
+        <div class="app-image">
+          <img
+            src="images/app-preview.png"
+            alt="Aperçu de l'application Tavernium"
+          />
+        </div>
+        <div class="app-text">
+          <h2>Découvrez notre application</h2>
+          <p>
+            Pour une expérience optimale, téléchargez l'application Tavernium.
+            Commandez à distance, réservez votre table et bénéficiez d'offres
+            exclusives.
+          </p>
+          <ul>
+            <li>Commandes en ligne rapides et intuitives</li>
+            <li>Notifications pour les événements et promotions</li>
+            <li>Programme de fidélité et avantages personnalisés</li>
+          </ul>
+          <a href="https://tavernium.com/app" class="btn btn-primary"
+            >Télécharger l'app</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="inscription" class="inscription">
+      <div class="container">
+        <h2>Inscrivez-vous à la liste d'attente</h2>
+        <form
+          id="newsletter"
+          action="https://tavernium.com/api/subscribe"
+          method="POST"
+          class="newsletter-form"
+        >
+          <label for="email">Votre adresse e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@mail.com"
+            required
+          />
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+        <div class="steps">
+          <h3>Comment ça marche ?</h3>
+          <ol>
+            <li>Inscrivez-vous à la liste d'attente.</li>
+            <li>Recevez une invitation exclusive pour l'ouverture.</li>
+            <li>Profitez d'offres spéciales et découvrez notre menu.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2>Questions fréquentes</h2>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>Quand ouvrirez-vous ?</h3>
+            <p>
+              L'ouverture est prévue prochainement, suivez-nous sur les réseaux
+              pour ne rien manquer.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>Proposez-vous des options végétariennes ?</h3>
+            <p>
+              Oui, notre carte inclut plusieurs tourtes végétariennes et
+              cocktails sans alcool.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>Est-il possible de réserver ?</h3>
+            <p>
+              Oui, la réservation se fait via notre application ou directement
+              sur place.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>Quels sont vos horaires ?</h3>
+            <p>
+              Nous sommes ouverts 24h/24, 7j/7 pour vous servir à tout moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> Tavernium. Tous droits réservés.</p>
+        <nav class="footer-nav">
+          <a href="#concept">Concept</a>
+          <a href="#carte">Carte</a>
+          <a href="#app">Application</a>
+          <a href="#inscription">Inscription</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="social-links">
+          <a href="https://www.instagram.com/tavernium" aria-label="Instagram"
+            >Instagram</a
+          >
+          <a href="https://www.tiktok.com/@tavernium" aria-label="TikTok"
+            >TikTok</a
+          >
+          <a href="mailto:tavernium@gmail.com" aria-label="Email">Contact</a>
+        </div>
+      </div>
+    </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
