@@ -244,3 +244,11 @@ p.lead {
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.03);
 }
+.tavernium-logo {
+  font-family: "Klyne", system-ui, -apple-system, Segoe UI, Roboto, Inter,
+    Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3em; /* triple l'espace standard */
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+}
