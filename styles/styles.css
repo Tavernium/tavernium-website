@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("images/409F5E54-8482-4B25-B2C1-9285B22CD357.png")
+  background: url("../images/409F5E54-8482-4B25-B2C1-9285B22CD357.png")
     center/cover no-repeat;
   position: relative;
 }
@@ -84,11 +84,11 @@
 }
 
 .instagram-link {
-  background: url("images/icon-instagram.svg") no-repeat left center / 20px;
+  background: url("../images/icon-instagram.svg") no-repeat left center / 20px;
   padding-left: 28px;
 }
 
 .facebook-link {
-  background: url("images/icon-facebook.svg") no-repeat left center / 20px;
+  background: url("../images/icon-facebook.svg") no-repeat left center / 20px;
   padding-left: 28px;
 }
