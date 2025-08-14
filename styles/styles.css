@@ -84,11 +84,11 @@
 }
 
 .instagram-link {
-  background: url("../images/icon-instagram.svg") no-repeat left center / 20px;
+  background: url("images/icon-instagram.svg") no-repeat left center / 20px;
   padding-left: 28px;
 }
 
 .facebook-link {
-  background: url("../images/icon-facebook.svg") no-repeat left center / 20px;
+  background: url("images/icon-facebook.svg") no-repeat left center / 20px;
   padding-left: 28px;
 }
