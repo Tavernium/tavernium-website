@@ -8,7 +8,7 @@
 }
 
 .hero-header {
-  min-height: 60vh;
+  min-height: 100vh; /* occupe toute la hauteur de la fenêtre */
   display: flex;
   align-items: center;
   justify-content: center;
