@@ -3,56 +3,87 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tavernium — Le lieu qui nous lie</title>
+    <title>
+      Tavernium – Ouverture prochaine à Auxerre | Bar-restaurant festif 24h/24
+    </title>
     <meta
       name="description"
-      content="Tavernium : Bar-club-restaurant & lieu de création — ouverture bientôt. Rejoignez la liste d’attente."
+      content="Tavernium ouvre bientôt à Auxerre : bar-restaurant festif 24h/24 autour des tourtes salées & sucrées et cocktails signature. Inscrivez-vous pour l'ouverture et les offres fondatrices."
     />
+    <meta
+      name="keywords"
+      content="Tavernium, bar Auxerre, restaurant Auxerre, bar festif, 24h/24, tourte salée, tourte sucrée, cocktails signature, route de Chablis"
+    />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="canonical" href="https://tavernium.com/" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tavernium — Le lieu qui nous lie" />
+    <meta
+      property="og:title"
+      content="Tavernium – Ouverture prochaine à Auxerre"
+    />
     <meta
       property="og:description"
-      content="Bar-club-restaurant festif & lieu de création. Bientôt disponible."
+      content="Bar-restaurant festif 24h/24 : cocktails signature & tourtes. Rejoignez la liste d'attente et découvrez l'app Tavernium."
     />
+    <meta property="og:image" content="https://tavernium.com/og-image.jpg" />
     <meta property="og:url" content="https://tavernium.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles externalisés -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         "name": "Tavernium",
-        "url": "https://tavernium.com/",
-        "sameAs": []
+        "image": "https://tavernium.com/og-image.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Auxerre",
+          "addressCountry": "FR"
+        },
+        "url": "https://tavernium.com",
+        "description": "Bar-restaurant festif 24h/24 à Auxerre : cocktails signature & tourtes salées/sucrées. Ouverture prochaine.",
+        "openingHours": "Mo-Su 00:00-24:00",
+        "sameAs": ["https://www.instagram.com/", "https://www.tiktok.com/"]
       }
     </script>
   </head>
   <body>
-    <div class="wrap">
-      <main class="card" role="main">
-        <div class="pill">Bientôt</div>
-        <h1><span class="logo">Tavernium</span></h1>
-        <p>
-          Un nouveau concept de franchise de bar-club-restaurant : Nous
-          recherchons des entrepreneurs motivés pour démarrer l'aventure.
-        </p>
-        <a
-          class="cta"
-          href="mailto:tavernium@gmail.com?subject=Liste d’attente — Tavernium&body=Bonjour,%0AJe souhaite être tenu(e) informé(e) du lancement.%0A—%20"
-          >Rejoindre la liste d’attente et reçevoir plus d'infos</a
-        >
-        <div class="grid">
-          <span class="pill">France</span>
-          <span class="pill">Contactez nous pour obtenir plus d'infos</span>
-        </div>
-        <footer>
-          © <span id="y"></span> Tavernium — Tous droits réservés.
-        </footer>
-      </main>
-    </div>
+    <!-- 🔔 Ton contenu HTML inchangé ici (hero, sections, footer...) -->
+    <!-- Je n’ai pas recopié tout le corps pour ne pas te saturer, tu colles tout ton contenu ici -->
+
     <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const form = document.getElementById("newsletter");
+      form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: fd,
+          headers: { Accept: "application/json" },
+        });
+        if (res.ok) {
+          alert("Merci ! Vous êtes bien inscrit(e).");
+          form.reset();
+        } else {
+          alert(
+            "Oups, échec de l'inscription. Vous pouvez nous écrire à tavernium@gmail.com"
+          );
+        }
+      });
     </script>
   </body>
 </html>
